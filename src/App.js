@@ -10,25 +10,26 @@ function App() {
   const [currentSong, setCurrentSong] = useState(0);
 
   const songs = [
-    {
-      title: "Sample Song",
-      artist: "Unknown Artist",
-      album: "Album One",
-      file: "/sample.mp3",
-    },
-    {
-      title: "Crystal Waves",
-      artist: "DJ Aurora",
-      album: "Neon Dreams",
-      file: "/song2.mp3",
-    },
-    {
-      title: "Skyline",
-      artist: "Luna Beats",
-      album: "City Nights",
-      file: "/song3.mp3",
-    },
-  ];
+  {
+    title: "Sample Song",
+    artist: "Unknown Artist",
+    album: "Album One",
+    file: process.env.PUBLIC_URL + "/sample.mp3",
+  },
+  {
+    title: "Crystal Waves",
+    artist: "DJ Aurora",
+    album: "Neon Dreams",
+    file: process.env.PUBLIC_URL + "/song2.mp3",
+  },
+  {
+    title: "Skyline",
+    artist: "Luna Beats",
+    album: "City Nights",
+    file: process.env.PUBLIC_URL + "/song3.mp3",
+  },
+];
+
 
   const handleSelectSong = (index) => {
     setCurrentSong(index);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+🌌 Neon React Music Player
+
+A glowing, neon-themed music experience built with React.
+Login → Playlist → Player — smooth, simple, and stylish.
+
+🎶 Choose a song
+▶️ Play and pause
+🌈 Neon purple + pink design
+🎧 Easy navigation
+💜 Made with love by Katherine McNeil
+
+✨ Features
+
+Neon login screen
+
+Interactive playlist
+
+Music player with play/pause
+
+Back button to playlist
+
+Custom theme
+
+Clean animations
+
+Footer signature
+
+💜 Created By
+
+Katherine McNeil
+2025
+>>>>>>> afbe9a2f20f76b9eae28afc51ea5cae7b0dd959f

@@ -1,0 +1,121 @@
+/* Full gradient background */
+.playlist-wrapper {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #2b0057, #090016);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gradient title bar like your screenshot */
+.playlist-title {
+  background: linear-gradient(90deg, #ff72f9, #70eaff);
+  padding: 15px 40px;
+  border-radius: 12px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+/* Song list spacing */
+.song-list {
+  width: 100%;
+  max-width: 650px;
+}
+
+/* Each row (dark glowing cards) */
+.song-row {
+  background: rgba(10, 0, 30, 0.7);
+  border-radius: 22px;
+  padding: 25px 30px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(150, 0, 255, 0.2);
+  transition: 0.2s ease;
+}
+
+.song-row:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
+}
+
+/* Thumbnail circle */
+.song-thumb {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff72f9, #6cf6ff);
+  margin-right: 25px;
+}
+
+/* Song info */
+.song-info {
+  flex: 1;
+  color: white;
+}
+
+.song-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.song-artist {
+  margin: 5px 0 0 0;
+  color: #c8bfff;
+  font-size: 16px;
+}
+
+.song-album {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #72caff;
+}
+
+/* Actions (heart + play) */
+.song-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.song-actions span {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.song-actions span:hover {
+  transform: scale(1.2);
+}
+.back-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 10px 22px;
+
+  background: linear-gradient(135deg, #ff72f9, #70eaff);
+  border: none;
+  border-radius: 12px;
+
+  color: #1a0033;
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.7);
+}

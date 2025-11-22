@@ -19,6 +19,7 @@ function App() {
 
   // My list of songs — this is the data used for Playlist and Player.
   const songs = [
+<<<<<<< HEAD
     {
       title: "Katherine Rocks",
       artist: "Katherine",
@@ -38,6 +39,28 @@ function App() {
       file: process.env.PUBLIC_URL + "/song3.mp3",
     },
   ];
+=======
+  {
+    title: "Sample Song",
+    artist: "Unknown Artist",
+    album: "Album One",
+    file: process.env.PUBLIC_URL + "/sample.mp3",
+  },
+  {
+    title: "Crystal Waves",
+    artist: "DJ Aurora",
+    album: "Neon Dreams",
+    file: process.env.PUBLIC_URL + "/song2.mp3",
+  },
+  {
+    title: "Skyline",
+    artist: "Luna Beats",
+    album: "City Nights",
+    file: process.env.PUBLIC_URL + "/song3.mp3",
+  },
+];
+
+>>>>>>> e5dc28aebad2f38ff0e8bcd0186a7ca6df9d545c
 
   const handleSelectSong = (index) => {
     setCurrentSong(index);

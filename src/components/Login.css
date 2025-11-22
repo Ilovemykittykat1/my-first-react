@@ -1,56 +1,81 @@
 .login-container {
-  height: 100vh;
-  background: linear-gradient(180deg, #0a012b, #18004a);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh; /* full screen baby, no half-measures 💅 */
+  background: linear-gradient(180deg, #0a012b, #18004a); /* purple galaxy vibes 💜✨ */
+  display: flex; /* flexbox because we’re classy 😌 */
+  justify-content: center; /* shove it to the center horizontally 💖 */
+  align-items: center; /* shove it to the center vertically too 😎 */
+  padding: 20px; /* helps on tiny phones */
+  box-sizing: border-box;
 }
 
 .login-card {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 40px;
-  border-radius: 20px;
-  width: 320px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  background: rgba(255, 255, 255, 0.05); /* glassy ghost box 👻💕 */
+  padding: 40px; /* big hugs worth of padding 🤗 */
+  border-radius: 20px; /* round like a marshmallow ☁️💗 */
+  width: 100%;
+  max-width: 320px; /* perfect on desktop + mobile 🫶 */
+  text-align: center; /* everything centered like my energy (lies) 😂 */
+  backdrop-filter: blur(10px); /* bougie frosted glass ✨ */
+  box-shadow: 0 4px 30px rgba(0,0,0,0.5); /* dramatic shadow because we’re extra 💁‍♀️💜 */
 }
 
 .login-title {
-  color: white;
-  font-size: 28px;
-  margin-bottom: 30px;
+  color: white; /* bright and pure like Mouse’s soul 🐱💚 */
+  font-size: 28px; /* big important title energy 📢💖 */
+  margin-bottom: 30px; /* give it breathing room 😌 */
 }
 
 .login-input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 30px;
-  border: none;
-  outline: none;
-  background: rgba(255,255,255,0.2);
-  color: white;
+  width: 100%; /* stretchhhh like me reaching for snacks 🍫 */
+  padding: 12px; /* comfy level padding 💺 */
+  margin-bottom: 15px; /* little space between the kiddos 💕 */
+  border-radius: 30px; /* round and cute like a baby seal 🦭💗 */
+  border: none; /* borders? we don’t know her 🙅‍♀️ */
+  outline: none; /* no glow aura when clicked 😂 */
+  background: rgba(255,255,255,0.2); /* soft cloudy white ☁️ */
+  color: white; /* text is bright like our future ✨💖 */
 }
 
 .login-btn {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(90deg, #ff6bd6, #6bf7ff);
-  border: none;
-  color: black;
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-top: 10px;
+  width: 100%; /* full width confidence 😤🔥 */
+  padding: 12px; /* comfy button of joy */
+  background: linear-gradient(90deg, #ff6bd6, #6bf7ff); /* bisexual lighting button 🌈🥰 */
+  border: none; /* smooth like a smoothie 🥤 */
+  color: black; /* readable even when half asleep 😪 */
+  font-size: 16px; /* perfect size, not yelling */
+  border-radius: 25px; /* rounded so it looks friendly 💞 */
+  cursor: pointer; /* pointer finger says “push meeee” 👉😆 */
+  margin-top: 10px; /* space so it doesn’t cling like a stage-5 clinger 💔😂 */
 }
 
 .login-small {
-  margin-top: 20px;
-  color: #ccc;
+  margin-top: 20px; /* more spaceeeee */
+  color: #ccc; /* soft grey whisper ✨ */
 }
 
 .login-social {
-  margin-top: 10px;
-  font-size: 30px;
+  margin-top: 10px; /* tiny gap */
+  font-size: 30px; /* big music note because why not 🎵💗 */
+}
+
+
+/* 📱 MOBILE RESPONSIVE MAGIC */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px; /* tighter on phones */
+    border-radius: 15px;
+  }
+
+  .login-title {
+    font-size: 22px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-input {
+    padding: 10px;
+  }
 }

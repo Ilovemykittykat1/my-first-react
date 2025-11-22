@@ -21,7 +21,6 @@ function Player({ song, onBack }) {
 
   return (
     <div className="player-wrapper">
-
       <button className="back-btn" onClick={onBack}>
         ← Back
       </button>
@@ -38,6 +37,14 @@ function Player({ song, onBack }) {
 
         <button className="play-btn" onClick={handlePlay}>Play</button>
         <button className="pause-btn" onClick={handlePause}>Pause</button>
+
+        <div className="equalizer">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   );

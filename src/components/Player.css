@@ -14,6 +14,10 @@ body {
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+  /* NEW: mobile + footer safe */
+  max-width: 90%;
+  box-sizing: border-box;
 }
 
 /* Titles */
@@ -106,4 +110,46 @@ body {
 @keyframes bounce {
   from { height: 10px; }
   to { height: 50px; }
+}
+
+.pause-btn {
+  padding: 12px 30px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #ff39b3, #00e5ff);
+  border: none;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.pause-btn:hover {
+  opacity: 0.85;
+}
+
+/* 📱 MOBILE RESPONSIVE FIXES */
+@media (max-width: 480px) {
+  .player-wrapper {
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 20px;
+  }
+
+  .song-title {
+    font-size: 24px;
+  }
+
+  .play-btn,
+  .pause-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .skip-btn {
+    font-size: 22px;
+  }
+
+  .equalizer {
+    height: 40px;
+  }
 }

@@ -10,7 +10,6 @@ function Login({ onLogin }) {
         <input className="login-input" type="text" placeholder="Username" />
         <input className="login-input" type="password" placeholder="Password" />
 
-        {/* This button MUST trigger the login */}
         <button className="login-btn" onClick={onLogin}>
           GET STARTED
         </button>

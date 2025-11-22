@@ -4,59 +4,79 @@ import Player from "./components/Player";
 import Playlist from "./components/Playlist";
 import "./App.css";
 
+// I’m importing my components (Login, Playlist, Player).
+// These are the pages I created — each one handles its own screen.
+
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [currentScreen, setCurrentScreen] = useState("playlist");
-  const [currentSong, setCurrentSong] = useState(0);
+  // Remembers if the user is logged in or not.
 
+  const [currentScreen, setCurrentScreen] = useState("playlist");
+  // This is like a map that guides the user from page to page (login → playlist → player).
+
+  const [currentSong, setCurrentSong] = useState(0);
+  // Remembers which song the user clicked.
+
+  // My list of songs — this is the data used for Playlist and Player.
   const songs = [
     {
-      title: "Sample Song",
-      artist: "Unknown Artist",
+      title: "Katherine Rocks",
+      artist: "Katherine",
       album: "Album One",
-      file: "/sample.mp3",
+      file: process.env.PUBLIC_URL + "/sample.mp3",
     },
     {
       title: "Crystal Waves",
       artist: "DJ Aurora",
       album: "Neon Dreams",
-      file: "/song2.mp3",
+      file: process.env.PUBLIC_URL + "/song2.mp3",
     },
     {
       title: "Skyline",
       artist: "Luna Beats",
       album: "City Nights",
-      file: "/song3.mp3",
+      file: process.env.PUBLIC_URL + "/song3.mp3",
     },
   ];
 
   const handleSelectSong = (index) => {
     setCurrentSong(index);
+    // Remembers which song the user clicked.
+
     setCurrentScreen("player");
+    // Switches the page to the Player screen.
   };
 
   return (
     <div className="app-container">
 
+      {/* If you're NOT logged in → show the Login page */}
       {!loggedIn && (
         <>
           <Login onLogin={() => setLoggedIn(true)} />
+          {/* When you click GET STARTED, loggedIn becomes true */}
           <Footer />
         </>
       )}
 
+      {/* If you're logged in AND you're on the playlist screen */}
       {loggedIn && currentScreen === "playlist" && (
         <>
           <Playlist songs={songs} onSelectSong={handleSelectSong} />
+          {/* Playlist gets the songs + the function that runs when a song is clicked */}
           <Footer />
         </>
       )}
 
+      {/* If you're logged in AND you're on the player screen */}
       {loggedIn && currentScreen === "player" && (
         <>
           <Player
             song={songs[currentSong]}
+            // Player gets the exact song you clicked.
+
             onBack={() => setCurrentScreen("playlist")}
+            // Back button takes you back to the Playlist screen.
           />
           <Footer />
         </>

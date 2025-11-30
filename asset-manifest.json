@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/my-first-react/static/css/main.acfd3e5e.css",
-    "main.js": "/my-first-react/static/js/main.fa400717.js",
+    "main.css": "/my-first-react/static/css/main.8854d968.css",
+    "main.js": "/my-first-react/static/js/main.7b1c5473.js",
     "static/js/453.2d12e167.chunk.js": "/my-first-react/static/js/453.2d12e167.chunk.js",
+    "static/media/silentnight.png": "/my-first-react/static/media/silentnight.9bae810b51c89ccd81e5.png",
+    "static/media/frosty.png": "/my-first-react/static/media/frosty.e5998034253e05c62ef0.png",
+    "static/media/santa.png": "/my-first-react/static/media/santa.609e9e33ccec7615c50b.png",
     "index.html": "/my-first-react/index.html",
-    "main.acfd3e5e.css.map": "/my-first-react/static/css/main.acfd3e5e.css.map",
-    "main.fa400717.js.map": "/my-first-react/static/js/main.fa400717.js.map",
+    "main.8854d968.css.map": "/my-first-react/static/css/main.8854d968.css.map",
+    "main.7b1c5473.js.map": "/my-first-react/static/js/main.7b1c5473.js.map",
     "453.2d12e167.chunk.js.map": "/my-first-react/static/js/453.2d12e167.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acfd3e5e.css",
-    "static/js/main.fa400717.js"
+    "static/css/main.8854d968.css",
+    "static/js/main.7b1c5473.js"
   ]
 }
